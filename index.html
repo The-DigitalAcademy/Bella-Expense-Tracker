@@ -1,53 +1,45 @@
-<!DOCTYPE html>
-<html lang="en">
+<body>
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <link rel="stylesheet" href="style.css" />
-    <title>Expense Tracker</title>
+    
+    <link rel="stylesheet" href="style.css">
   </head>
-  <body>
-    <h2>Expense Tracker</h2>
-
-    <div class="container">
-      <h4> Balance</h4>
-      <h1 id="balance">500.00</h1>
-
-      <div class="inc-exp-container">
-        <div>
-          <h4>Income</h4>
-          <p id="money-plus" class="money plus">+R1400.00</p>
-        </div>
-        <div>
-          <h4>Expense</h4>
-          <p id="money-minus" class="money minus">-R500.00</p>
-        </div>
+  <div class="container">
+      <h1>Expense Tracker</h1>
+      <h2>App Budget</h2>
+      <div class="name-input">
+          <span class="name-text">Name: </span>
+          <br>
+          <input type="text" class="name" id="input" placeholder="Where was the expense made" size="50">
       </div>
+      <div class="date-amount-input">
+          <span>Date: </span>
+          <input class="date" type="date">
+          <span class="amount-text">Amount: </span>
+          <input type="number" id="amount" placeholder="">
+      </div>
+      <button class="add-btn" onclick="addExpense()">Add Expense</button>
+   <div class="balance">
+    <h3>Balance</h3><span id="balance">R540</span>
+    <h3>Income</h3><span id="income">R0</span>
+    <h3>Expense</h3><span id="expense">R1120</span>
 
-      <h3>History</h3>
-      <ul id="list" class="list">
-        <!-- <li class="minus">
-          Cash <span>-R400</span><button class="delete-btn">x</button>
-        </li> -->
-      </ul>
+   </div>
 
-      <h3>Add new transaction</h3>
-      <form id="form">
-        <div class="form-control">
-          <label for="text">Text</label>
-          <input type="text" id="text" placeholder="Enter text..." />
-        </div>
-        <div class="form-control">
-          <label for="amount"
-            >Amount <br />
-            (negative - expense, positive - income)</label
-          >
-          <input type="number" id="amount" placeholder="Enter amount..." />
-        </div>
-        <button class="btn">Add transaction</button>
-      </form>
-    </div>
-    <script src="script.js"></script>
-  </body>
-</html>
+      <table id="displayData">
+          <tr>
+              <th>Name</th>
+              <th>Group</th>
+              <th>Amount</th>
+          </tr>
+
+          <tr>
+            <td>Cash money</td>
+            <td>Income</td>
+            <td>R4000</td>
+        </tr>
+
+        
+      </table>
+  </div>
+  <script src="./Javascript.js"></script>
+</body>

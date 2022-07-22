@@ -1,153 +1,96 @@
-@import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
-
-:root {
-  --box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
-}
-
-* {
-  box-sizing: border-box;
-}
-
-body { 
-  background-color: #e6cbb9;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  min-height: 100vh;
-  margin: 0;
-  font-family: 'Lato', sans-serif;
-}
-
 .container {
-  margin: 30px auto;
-  width: 350px;
+  text-align: center;
+  border-style: solid;
+
 }
 
 h1 {
-  letter-spacing: 1px;
-  margin: 0;
-  text-align: center;
+  font-size: 3.5em;
 }
 
-h3 {
-  border-bottom: 1px solid #bbb;
-  padding-bottom: 10px;
-  margin: 40px 0 10px;
+h2 {
+  font-size: 2em;
+  margin-bottom: 0.5em;
+  color: green;
 }
 
-h4 {
-  margin: 0;
-  text-transform: uppercase;
-  text-align: center;
+span {
+  font-size: 1.4em;
 }
 
-.inc-exp-container {
-  background-color: #fff;
-  box-shadow: var(--box-shadow);
-  padding: 20px;
-  display: flex;
-  justify-content: space-between;
-  margin: 20px 0;
+.date-amount-input {
+  margin-top: 0.5em;
 }
 
-.inc-exp-container > div {
-  flex: 1;
-  text-align: center;
+input {
+  height: 28px;
 }
 
-.inc-exp-container > div:first-of-type {
-  border-right: 1px solid #dedede;
+.name {
+  padding-right: 5em;
 }
 
-.money {
-  font-size: 20px;
-  letter-spacing: 1px;
-  margin: 5px 0;
+.amount {
+  padding-right: 15.35em;
 }
 
-.money.plus {
-  color: #23e63d;
+.amount-text {
+  margin-left: 0.4em;
 }
 
-.money.minus {
-  color: #f71e1e;
+.date {
+  padding-right: 18.8em;
+  
 }
 
-label {
-  display: inline-block;
-  margin: 10px 0;
+.add-btn {
+  margin-top: 0.9em;
+  padding: 0.6em;
+  font-size: 1.1em;
+  background: green;
+  color: rgb(255, 255, 255);
+  border: none;
+  border-radius: 5px;
 }
 
-input[type='text'],
-input[type='number'] {
-  border: 1px solid #ecbebe;
-  border-radius: 2px;
-  display: block;
-  font-size: 16px;
-  padding: 10px;
-  width: 100%;
-}
-
-.btn {
+.add-btn:hover, .add-btn:focus {
   cursor: pointer;
-  background-color: #9c88ff;
-  box-shadow: var(--box-shadow);
-  color: #fff;
-  border: 0;
-  display: block;
-  font-size: 16px;
-  margin: 10px 0 30px;
-  padding: 10px;
-  width: 100%;
+  background: rgb(3, 177, 3);
 }
 
-.btn:focus,
-.delete-btn:focus {
-  outline: 0;
+table {
+  margin: 0 auto;
+  margin-top: 2em;
+  width: 50%;
+  height: 80px;
 }
 
-.list {
-  list-style-type: none;
-  padding: 0;
-  margin-bottom: 40px;
+tr {
+  height: 40px;
 }
 
-.list li {
-  background-color: #fff;
-  box-shadow: var(--box-shadow);
-  color: #333;
-  display: flex;
-  justify-content: space-between;
-  position: relative;
-  padding: 10px;
-  margin: 10px 0;
+table, th, td{
+  border: 1px solid rgba(0, 0, 0, 0.103);
+  border-collapse: collapse;
 }
 
-.list li.plus {
-  border-right: 5px solid #2ecc71;
+.empty-text {
+  font-size: 0.93em;
 }
 
-.list li.minus {
-  border-right: 5px solid #e9210a;
+.if-empty {
+  background: rgba(0, 0, 0, 0.055);
 }
-
-.delete-btn {
-  cursor: pointer;
-  background-color: #e74c3c;
-  border: 0;
-  color: #fff;
-  font-size: 20px;
-  line-height: 20px;
-  padding: 2px 5px;
-  position: absolute;
-  top: 50%;
-  left: 0;
-  transform: translate(-100%, -50%);
-  opacity: 0;
-  transition: opacity 0.3s ease;
+.date-amount-input
+{
+  width: 50px;
+  margin-left: 600px;
 }
-
-.list li:hover .delete-btn {
-  opacity: 1;
+.name-input
+{
+  margin-left: 64px;
+}
+.name-text
+{
+  margin-left: -390px;
 }
