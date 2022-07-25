@@ -1,45 +1,45 @@
-<body>
-  <head>
-    
-    <link rel="stylesheet" href="style.css">
-  </head>
-  <div class="container">
-      <h1>Expense Tracker</h1>
-      <h2>App Budget</h2>
-      <div class="name-input">
-          <span class="name-text">Name: </span>
-          <br>
-          <input type="text" class="name" id="input" placeholder="Where was the expense made" size="50">
-      </div>
-      <div class="date-amount-input">
-          <span>Date: </span>
-          <input class="date" type="date">
-          <span class="amount-text">Amount: </span>
-          <input type="number" id="amount" placeholder="">
-      </div>
-      <button class="add-btn" onclick="addExpense()">Add Expense</button>
-   <div class="balance">
-    <h3>Balance</h3><span id="balance">R540</span>
-    <h3>Income</h3><span id="income">R0</span>
-    <h3>Expense</h3><span id="expense">R1120</span>
+<!DOCTYPE html>
 
-   </div>
+<html>
+    <head>
+        <title>
+            Expense Tracker
+        </title>
+        <link rel="icon" href="https://img.icons8.com/bubbles/50/000000/money.png"/>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    </head>
 
-      <table id="displayData">
-          <tr>
-              <th>Name</th>
-              <th>Group</th>
-              <th>Amount</th>
-          </tr>
-
-          <tr>
-            <td>Cash money</td>
-            <td>Income</td>
-            <td>R4000</td>
-        </tr>
-
+    <body>
+        <h1 id="maintitle">Expense Tracker</h1>
         
-      </table>
-  </div>
-  <script src="./Javascript.js"></script>
-</body>
+        <p>Add positive value for earnings.</p>
+        <p>Add negative value for expenses.</p>
+
+        <form>
+            <input type="text" id="desc" placeholder="Description..."/>
+            <input type="number" id="val" placeholder="R"/>
+            <input type="date" id="transdate"/>
+            <button id="formAddButton"><i class="fa fa-plus-circle fa-3x"></i></button>
+        </form>
+
+        <div id="tabs">
+            <div id="total">Total Left: &nbsp;R  &nbsp;<span id="total-amt">0</span></div>
+            <div id="earn">Total Earned:  &nbsp;R  &nbsp;<span id="earn-amt">0</span></div>
+            <div id="spend">Total Spent:  &nbsp;R  &nbsp;<span id="spend-amt">0</span></div>
+        </div>
+
+        <table id="transactions">
+            <tr>
+              <th style="width: 10%;"> </th>
+              <th style="width: 40%;">Description:</th>
+              <th style="width: 30%">Amount:</th>
+              <th style="width: 10%;">Date:</th>
+            </tr>
+          </table>
+
+          <script src="script.js"></script>
+
+    </body>
+</html>
